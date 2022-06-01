@@ -29,10 +29,13 @@ Find a simple processing sketch you have made. To start, select a single file pr
 ### Step 3: Copy, paste & translate
 
 Copy your processing file into _sketch.py_. You will then need to perform the java -> javascript translation. Thankfully, almost all of the processing specific commands are the same in both. The main things to change are:
- * `size` which you probably call in `setup` becomes `createCanvas`
- * All functions loose their return types, but you will have to include `function` before their names.
- * All variables loose their types. Replace variable types with `var` (`let` is also acceptable).
+* `size` which you probably call in `setup` becomes `createCanvas`
+* All functions loose their return types, but you will have to include `function` before their names.
+* All variables loose their types. Replace variable types with `var` (`let` is also acceptable).
   * All numbers in javascript are floating point values. If you need an integer, then make sure to use the `int` function, which works as it normally does in processing.
+* Function parameters have no type at all (so function headers look like this `function foo(x, y, q)` 
+* Array variables are all of the `Array` type, regardless of what they hold.
+  * Example: `var arr = new Array(30)`
 
 [Here is more information on translating from processing to p5.js](https://github.com/processing/p5.js/wiki/Processing-transition)
 
