@@ -36,6 +36,8 @@ Copy your processing file into _sketch.py_. You will then need to perform the ja
 
 [Here is more information on translating from processing to p5.js](https://github.com/processing/p5.js/wiki/Processing-transition)
 
+You can use the p5.js mode in the processing program to work on & test your code as well.
+
 When you think you have done the translating correctly, save and commit your changes. Reload your website (you may need to wait, it's not a bad idea to put a piece of text in _index.html_ that indicates you've changed things to see if that new text loads (even just an incrimenting number is good).
 
 ### Step 4: Fix the bugs
